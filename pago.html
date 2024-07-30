@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago - Alexandra Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family:'Great Vibes', cursive ;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #FF97D8;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 32px; /* Aumentar tamaño de letra */
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #EBCCFC;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrar contenido horizontalmente */
+        }
+
+        .container h1 {
+            font-size: 24px; /* Aumentar tamaño de letra */
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 20px; /* Aumentar tamaño de letra */
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #FF97D8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #EBCCFC;
+        }
+
+        footer {
+            background-color: #FF97D8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .redes-sociales a {
+            color: #1A2227;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            color: #EBCCFC;
+        }
+
+        footer p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/91/1e/00/911e006651bab40368d9c727f45bd0b2.jpg" alt="Logo de Alexandra Fashion">
+        <h1>Bienvenido a Alexandra Fashion</h1>
+        <button onclick="window.history.back()" class="btn">Volver atrás</button>
+          </header>
+
+    <div class="container">
+        <h1>Detalles del Producto</h1>
+        <p id="product-name">Nombre del Producto</p>
+        <p id="product-price">Precio: $XX.XX</p>
+        <a href="#" class="btn" id="pay-button">Proceder al Pago</a>
+    </div>
+
+    <footer>
+                       <p>&copy; Mi sitio web 2024</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get('product');
+        const productPrice = urlParams.get('price');
+
+        document.getElementById('product-name').textContent = `Producto: ${productName}`;
+        document.getElementById('product-price').textContent = `Precio: ${productPrice}`;
+
+        document.getElementById('pay-button').addEventListener('click', () => {
+            alert('Redirigiendo a la página de pago...');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras de Ropa - Alexandra Fashion</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos en línea para el ejemplo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #FF97D8;
+            color: #000000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            margin: 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 24px;
+        }
+
+        nav ul li a:hover {
+            background-color: #EBCCFC;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .centered-text {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            background-color: #FF97D8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #EBCCFC;
+        }
+
+        footer {
+            background-color: #FF97D8;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #1A2227;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #EBCCFC;
+
+        }
+  .social-media a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            border: 2px solid white;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            background-color: white;
+            color: #9370DB;
+        }
+
+        .social-media img {
+            width: 20px;
+            height: 20px;
+        }
+  .footer-social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .footer-social .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos a Alexandra Fashion</h1>
+    <!-- Cambia "https://i.pinimg.com/736x/91/1e/00/911e006651bab40368d9c727f45bd0b2.jpg" por la ruta de tu logo -->
+    <img src="https://i.pinimg.com/736x/91/1e/00/911e006651bab40368d9c727f45bd0b2.jpg" alt="Logo de tu empresa">
+    <nav>
+        <ul>
+              <li><a href="index.html" style="font-size: 24px;">Inicio</a></li>
+            <li><a href="Conocenos.html" style="font-size: 24px;">Conócenos</a></li>
+            <li><a href="servicios.html" style="font-size: 24px;">Servicios</a></li>
+            <li><a href="contacto.html" style="font-size: 24px;">Contáctanos</a></li>
+              <li><a href="compras.html" style="font-size: 24px;">Compras</a></li>
+
+
+
+
+            <!-- Agrega más elementos de lista según sea necesario -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+            
+   
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <ul class="servicios-lista">
+            <li>
+                <h3>Entregas Adomicilio</h3>
+                <img src="https://i.pinimg.com/736x/3f/01/67/3f01678054a0b94b24ae4581b4cce05c.jpg" alt="Entrega  adomocilio">
+                <p>Ofrecemos entrgas a todo Honduras.</p>
+            </li>
+                       <li>
+                <h3>Desfiles de Modas</h3>
+                <img src="https://i.pinimg.com/736x/7e/a0/20/7ea020488003e32a336e02b226da1b84.jpg" alt="Desfiles de Moda">
+                <p>Pasarela de moda con creaciones de la tienda.</p>
+            </li>
+            <!-- Agrega más servicios aquí -->
+        </ul>
+    </section>
+</main>
+  <footer>
+        <p>&copy; 2024 Mi Sitio Web.</p>
+        <div class="social-media">
+            <a href="https://m.facebook.com/profile.php?mibextid=LQQJ4d" target="_blank"><img src="https://i.pinimg.com/736x/fe/3d/bd/fe3dbdbc787b893a114eef7b62a4b538.jpg" alt="Facebook"></a>
+            <a href="https://x.com/aledelcid__?s=21" target="_blank"><img src="https://i.pinimg.com/736x/43/be/23/43be23e22dea0a57ab2fd353b050595e.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/aledelcid__?igsh=MTVsNnA2ZGo4b2I3NA%3D%3D&utm_source=qr" target="_blank"><img src="https://i.pinimg.com/736x/e6/ab/19/e6ab196eb69152dfe423d55a85e9289f.jpg" alt="Instagram"></a>
+
+        </div>
+    </footer>
+</body>
+</html>
